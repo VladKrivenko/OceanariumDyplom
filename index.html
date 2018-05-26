@@ -7,7 +7,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
-  	<link href="fotorama/fotorama.css" rel="stylesheet">
   	<link rel="stylesheet" type="text/css" href="lightGallery/lightGallery-master/dist/css/lightgallery.min.css">
 </head>
 
@@ -27,7 +26,10 @@
 					</ul>
 				</nav>
 		</div>
-			<h1><span>Oceanarium</span> on the golden beach</h1>
+			<h1><span>Oceanarium</span> on the golden beach
+						<div id="slider_prev"></div>
+						<div id="slider_next"></div></h1>
+
 			<div class="bottom_text">
 				<p>Welcome to our oceanarium</p>
 				<p>We are an oceanarium on the Golden Beach. Here you can see amazing underwater creatures and not only. The beauty of our oceanarium will simply swirl your head and you will never want to leave this place. You will be satisfied with one hundred percent :-)</p>
@@ -511,6 +513,21 @@
 	$(document).ready(function(){
 		$("#lightgallery").lightGallery();
 	})
+</script>
+<script type="text/javascript">
+function slideprev(){
+	$('.slider').slider('prev');
+}
+function slidenext(){
+	$('.slider').slider('next');
+}
+</script>
+<script type="text/javascript">
+	var sbutton = document.getElementById("slider_prev");
+	sbutton.onclick = slideprev;
+
+	var sbutton = document.getElementById("slider_next");
+	sbutton.onclick = slidenext;
 </script>
 </body>	
 </html>
