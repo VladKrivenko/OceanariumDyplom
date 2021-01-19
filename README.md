@@ -1,1 +1,1 @@
-https://vladkrivenko.github.io/OceanariumDyplom/
+https://vladkryvenko.github.io/OceanariumDyplom/
